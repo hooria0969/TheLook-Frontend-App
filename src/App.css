@@ -1,0 +1,1245 @@
+.App {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.1s linear;
+}
+body {
+  overflow: hidden;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+/*=========================NAVBAR STARTS======================= */
+.main-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-header.logobox {
+  padding-top: 10px;
+  width: 15%;
+  height: 12vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  box-sizing: border-box;
+}
+.logobox img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: fill;
+}
+.navbar {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 50px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.navbar ul li {
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #061323;
+  font-size: 1.15rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1.1rem;
+  transition: color 0.25s, background-color 0.25s;
+}
+.navbar ul li a:hover {
+  color: white;
+  background-color: #e2b13c;
+}
+/* Active state */
+.navbar ul li a.active {
+  color: white;
+  background-color: #e2b13c;
+}
+/*NAVBAR ENDS */
+/*==================================== HOME PAGE STARTS============================= */
+/* HERO STARTS */
+img {
+  width: 100%;
+}
+.box {
+  margin-top: 20px;
+  width: 75%;
+  justify-self: end;
+  overflow: hidden;
+  border: 1px solid #061323;
+}
+.slider {
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-200%);
+  }
+  65% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  85% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+/*  HEADINGS  starts*/
+
+/* Container */
+.headbox {
+  width: 50%;
+  height: 85vh;
+  position: absolute;
+  z-index: 3;
+  margin-top: 30vh; 
+  margin-left: 5vw; 
+}
+/* Main Heading */
+#head1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: clamp(2rem, 7vw, 7rem); /* Responsive font size */
+  padding-top: 0;
+  font-weight: 600;
+  color: #061323;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+/* Subheading */
+#head2 {
+  line-height: 1.2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: start;
+  font-size: clamp(1rem, 2.5vw, 2rem); /* Responsive font size */
+  color: #b4afaf;
+}
+#head2::before {
+  content: "“";
+  color: #061323;
+}
+#head2::after {
+  content: "”";
+  color: #061323;
+}
+#head3 {
+  line-height: 1.5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: clamp(1rem, 2.5vw, 2rem); /* Responsive font size */
+  color: #b4afaf;
+}
+.fade-section {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+.fade-text {
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.fade-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* HEADINGS ENDS */
+.space1 {
+  margin-top: 3vh;
+  width: 100%;
+  height: 20vh;
+  background-color: #061323;
+}
+/*  SCULPRURE STARTS */
+.sculphead {
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  color: #061323;
+  text-align: center;
+  font-weight: 640;
+  letter-spacing: 0.2rem;
+  margin-top: 13vh;
+}
+.dash {
+  width: 13%;
+  height: 0.7vh;
+  background-color: #e2b13c;
+  display: flex;
+  justify-self: center;
+  border-radius: 2rem;
+  box-shadow: 0.5px 0.8px 12px #061323;
+}
+.sculpdef {
+  color: #e2b13c;
+  font-weight: 500;
+  display: flex;
+  justify-self: center;
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  text-transform: capitalize;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.sculp2box {
+  width: 100%;
+  height: auto;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+}
+.sculpright {
+  width: 40%;
+  height: auto;
+  background: url("./Assests/Sculp-img1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sculpleft {
+  width: 50%;
+  height: auto;
+}
+.sculpleftHeading {
+  text-align: center;
+  font-size: clamp(1.2rem, 2.4vw, 1.4rem);
+  font-weight: 650;
+  letter-spacing: 0.1rem;
+}
+.sculp6box {
+  margin-top: 12vh;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: grid;
+  gap: 3.5rem 0;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+}
+.sculpdes01 {
+  width: 95%;
+  height: 10vh;
+  background-color: #061323;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.sculpdes01 img {
+  display: flex;
+  justify-content: flex-start;
+  width: 30px;
+  height: 30px;
+}
+.sculpleft li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2b13c;
+}
+.sculpdes01 li {
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  font-weight: 500;
+}
+.readbtn {
+  margin-left: 18vw;
+  margin-bottom: 1vh;
+  position: relative;
+  width: 12vw;
+  height: 7vh;
+  margin-top: 7vh;
+  color: #e2b13c;
+  font-size: clamp(0.5rem, 1.5vw, 1.2em);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.25s;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.25s;
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+a {
+  text-decoration: none;
+}
+.readbtn::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: #e2b13c;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+}
+.readbtn:hover {
+  color: #061323;
+  box-shadow: 0 15px 45px rgba(234, 234, 131, 0.5),  0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.readbtn:hover::after {
+  scale: 1 1;
+}
+/*SCULPTURE ENDS */
+.space2 {
+  margin-top: 20vh;
+  width: 100%;
+  height: 20vh;
+  background-color: #061323;
+}
+/* PAINTING PAGE START*/
+.paintright {
+  width: 40%;
+  height: auto;
+  background: url("./Assests/Paint-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #e2b13c;
+}
+.paint6box {
+  margin-top: 12vh;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: grid;
+  gap: 3.5rem 0;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+}
+.paintdes01 {
+  width: 95%;
+  height: 10vh;
+  background-color: #061323;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.paintdes01 img {
+  display: flex;
+  justify-self: flex-start;
+  width: 30px;
+  height: 30px;
+}
+.paintdes01 li {
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  font-weight: 500;
+}
+#paintReadBtn {
+  margin-left: 73%;
+  margin-top: 0;
+}
+/* PAINTING PAGE ENDS */
+.Space3 {
+  margin-top: 20vh;
+  width: 100%;
+  height: 20vh;
+  background-color: #061323;
+}
+/* PRINTMAKERS PAGE IS  SAME AS SCULPTURE PAGE  */
+.printright {
+  width: 40%;
+  height: auto;
+  background: url("./Assests/PrintMaking-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* PRINTMAKERS PAGE ENDS  */
+.dash1 {
+  margin-top: 10vh;
+  width: 100%;
+  height: 0.7rem;
+  background-color: #061323;
+}
+/*========================================= GALLERY PAGE STARTS=========================== */
+.lg-react-element {
+  column-count: 4;
+  column-gap: 10px;
+}
+.collectionImage {
+  max-width: 100%;
+  display: block;
+  padding: 5px 0px;
+  transition: transform 0.2s;
+}
+.collectionImage:hover {
+  filter: opacity(0.9);
+  transform: scale(1.01);
+}
+/* GALLERY PAGE ENDS */
+/*=======================================ARTISTS AND SHOP PAGE STARTS====================*/
+.page-title {
+  text-align: center;
+  color: #333; 
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  padding: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.2rem solid #e2b13c; 
+}
+.container-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr) ); 
+  gap: 1.5rem; 
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.card {
+  border: 0.1rem solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+  width: 100%;
+  height: auto; 
+  background-color: #b4afaf;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.card p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  margin-top: 1rem;
+}
+.card button {
+  align-self: center; 
+  margin-top: auto; 
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e2b13c;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); 
+}
+.card button:hover {
+  background-color: #cf9a2c;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.7rem 1.4rem rgba(0, 0, 0, 0.2); 
+}
+.card button:active {
+  background-color: #aa842d; 
+  transform: translateY(0); 
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); 
+}
+@media (max-width: 768px) {
+  .container-box {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(12rem, 1fr)
+    ); 
+  }
+  .card img {
+    height: 20rem;
+  }
+  .card h1 {
+    font-size: 1.5rem; 
+    margin: 0.8rem 0; 
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .card button {
+    padding: 0.6rem 1.2rem; 
+    font-size: 0.9rem; 
+  }
+}
+/*ARTISTS AND SHOP PAGE ENDS*/
+/*========================================ARTIST DETAIL PAGE START=======================*/
+.artist-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-family: "Trebuchet MS", Arial, sans-serif; 
+}
+.detail-box {
+  display: flex;
+  max-width: 55rem;
+  min-height: 30rem;
+  background: #fff;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem; 
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.detail-box:hover {
+  transform: translateY(-0.5rem); 
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15); 
+}
+.detail-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.detail-img img {
+  max-width: 100%;
+  
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); 
+}
+.description-box {
+  flex: 2;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+.description-box h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase; 
+  letter-spacing: 0.1rem; 
+  text-align: center;
+}
+.description-box p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 1rem 0 2rem;
+  text-align: justify; 
+}
+@media (max-width: 768px) {
+  .detail-box {
+    flex-direction: column;
+  }
+  .description-box {
+    padding: 1.5rem;
+  }
+  .description-box h1 {
+    font-size: 2rem;
+    text-align: center; 
+  }
+  .description-box p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+/*ARTIST DETAIL PAGE ENDS*/
+/*==============================SHOP PAINTINGS PAGE STYLING==================================*/
+/* body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; 
+} */
+/* Painting Details Page */
+.painting-details-page {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* Painting Section */
+.painting-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  margin-bottom: 3rem;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.painting-section img {
+  max-width: 18rem;
+  height: auto;
+  border: 1px solid #ddd;
+}
+.painting-info {
+  flex: 1;
+}
+.painting-info h1 {
+  margin-top: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.painting-info h4 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem; 
+}
+.painting-info p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1.125rem; 
+}
+/* Bids & Form Container */
+.bids-form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.bids-section,  .bid-form {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.bids-section h2, .bid-form h2 {
+  margin-bottom: 1.5rem;
+  color: #E2B13C;
+  font-size: 1.5rem;
+}
+/* List of Bids */
+.bids-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.bids-section th,
+.bids-section td {
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+.bids-section th {
+  background-color: #f4f4f4;
+}
+.bids-section tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.bid-form .inputs {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.bid-form button {
+  width: 100%;
+  background: #EAEAEA;
+  color: #E2B13C;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.bid-form button:hover {
+  background-color: #E2B13C;
+  color: #EAEAEA;
+  box-shadow: 0 15px 45px rgba(173, 216, 230, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.bid-form p {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .painting-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .bids-form-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .bids-section, .bid-form {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller devices */
+  }
+  .painting-details-page {
+    padding: 1.5rem;
+  }
+  .painting-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .painting-info h1 {
+    font-size: 1.75rem;
+  }
+  .painting-info p {
+    font-size: 1rem;
+  }
+  .bids-form-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .bids-section,  .bid-form {
+    width: 100%;
+  }
+  .bid-form button {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .painting-info h1 {
+    font-size: 1.5rem;
+  }
+  .painting-info p {
+    font-size: 0.875rem;
+  }
+  .bid-form button {
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+  }
+}
+/*SHOP PAINTINGS ENDS*/
+/*============================================CONTACT PAGE STARTS===========================*/
+.contactspace1 {
+  width: 100%;
+  height: 7vh;
+  margin-top: 2vh;
+  background-color: #061323;
+}
+.contactspace2 {
+  width: 100%;
+  height: 0.1vh;
+  margin-top: 15vh;
+  background-color: #e2b13c;
+  position: relative;
+}
+.contacthead {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: clamp(1.8rem, 4.8vw, 4rem); 
+  padding-top: 0;
+  font-weight: 600;
+  color: #061323;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-left: 5%;
+}
+.contacthead span, .contactp2 span {
+  color: #e2b13c;
+}
+.contactp1 {
+  line-height: 1.2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: start;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  color: #b4afaf;
+  margin-left: 5%;
+}
+.contactp2 {
+  line-height: 1.5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: start;
+  font-size: clamp(0.7rem, 1.2vw, 1.6rem); 
+  color: #b4afaf;
+  font-weight: 250;
+  color: #061323;
+  margin-left: 5%;
+  white-space: normal; 
+  word-wrap: break-word; 
+  max-width: 90%;
+}
+.contactspace3 {
+  width: 100%;
+  height: 0.1vh;
+  margin-top: 15vh;
+  background-color: #e2b13c;
+  position: relative;
+}
+.regContainer {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 5%;
+  padding-top: 3%;
+}
+.register-btn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  width: 14%;
+  padding: 10px 20px;
+  max-width: 300px; 
+  min-width: 100px; 
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background: #eaeaea;
+  color: #676767;
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.register-btn:hover {
+  box-shadow: 0 15px 45px rgba(173, 216, 230, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  background: #e2b13c;
+  color: #eaeaea;
+  cursor: pointer;
+}
+.login-signup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background: #eaeaea;
+  color: #676767;
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+}
+.close-btn:hover {
+  background-color: #f44336;
+  box-shadow: 0 15px 45px rgba(173, 216, 230, 0.5),0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  color: #061323;
+}
+.regContainer p {
+  text-align: center;
+  padding-top: 4%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 2%;
+  font-size: clamp(0.7rem, 1.2vw, 1.6rem); /* Responsive font size */
+  color: #061323;
+}
+.contactPage-Logo {
+  margin-top: 15vh;
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+}
+.contactPage-Logo img {
+  width: 80%;
+  height: 20vh;
+  mix-blend-mode: multiply;
+  object-fit: fill;
+  filter: brightness(1.4);
+}
+.contactPage-Logo img:hover {
+  transition: all 0.7s;
+  transform: translateY(-6px);
+  filter: brightness(1);
+  filter: saturate(100);
+  filter: opacity(100);
+  cursor: pointer;
+}
+.contactPage-Logo p {
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 2%;
+  font-size: clamp(0.7rem, 1.2vw, 1.6rem); /* Responsive font size */
+  color: #061323;
+}
+/*CONTACT PAGE ENDS*/
+/* =========================================LOGIN SIGNUP START================================== */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 3%;
+  background: #fff;
+  width: 600px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+}
+.text {
+  color: #e2b13c;
+  font-size: 30px;
+  font-weight: 700;
+}
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #e2b13c;
+  border-radius: 9px;
+}
+.inputs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.input {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 50px;
+  margin: auto;
+  border-radius: 6px;
+  background: #eaeaea;
+  box-shadow: 0 10px 20px rgba(173, 216, 230, 0.4),  0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.input:hover {
+  box-shadow: 0 15px 45px rgba(173, 216, 230, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.input img {
+  width: 35px;
+  height: 25px;
+  margin: 0px 30px;
+}
+.input input {
+  height: 50px;
+  width: 400px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #797979;
+  font-size: 19px;
+}
+.forgot-password {
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+.forgot-password span {
+  color: #e2b13c;
+  cursor: pointer;
+}
+.submit-btn {
+  padding: 3px 3px;
+  margin-left: 6vw;
+  height: 7vh;
+  width: 18%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  background: #eaeaea;
+  color: #676767;
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4),  0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  box-shadow: 0 15px 45px rgba(173, 216, 230, 0.5),  0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  background: #e2b13c;
+  color: #eaeaea;
+}
+.submit-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px auto;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #e2b13c;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4),  0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.submit:hover {
+  box-shadow: 0 15px 45px rgba(173, 216, 230, 0.5),  0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.gray {
+  background: #eaeaea;
+  color: #676767;
+}
+/* LOGIN SIGNUP ENDS */
+
+/* =======================================FOOTER STARTS==========================================*/
+.contact-footer {
+  width: 100%;
+  height: 80vh;
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+.right-foot {
+  width: 45%;
+  height: 70vh;
+}
+.right-foot span {
+  color: #e2b13c;
+  text-decoration: underline;
+}
+.right-foot h2 {
+  padding-top: 1rem;
+  color: #061323;
+  padding-left: 11rem;
+}
+.right-foot p {
+  color: #222;
+  padding-left: 4rem;
+  padding-right: 7rem;
+  padding-top: 1rem;
+  font-size: 18px;
+  word-spacing: 0.7em;
+  line-height: 1.5;
+  text-wrap: wrap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.vertical-line {
+  width: 0.1vw;
+  height: 70vh;
+  background-color: #061323;
+}
+.left-foot {
+  width: 45%;
+  height: 70vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.left-foot h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+.left-foot img {
+  all: unset;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 4rem;
+  margin-top: 1.6rem;
+  mix-blend-mode: multiply;
+}
+.left-foot a {
+  all: unset;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  margin-top: -1.2rem;
+}
+.left-foot a:hover {
+  color: #e2b13c;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.left-foot p {
+  margin-top: -1.7rem;
+  margin-left: 7rem;
+}
+.left-foot p:nth-of-type(4) {
+  padding-top: 0.9em;
+}
+.left-foot p:nth-of-type(5) {
+  padding-top: 2.7em;
+}
+/* ADDING RESPONSIVENESS TO FOOTER AND CONTACT PAGE*/
+@media screen and (min-width: 612px) {
+  .contact-footer {
+    /* flex-direction: column;
+      align-items: flex-start; */
+    gap: 1rem;
+  }
+  .right-foot {
+    width: 100%;
+    height: auto;
+  }
+  .right-foot h2, .right-foot p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+  }
+  .vertical-line {
+    display: grid;
+  }
+  .left-foot {
+    width: 100%;
+    height: auto;
+  }
+  .left-foot h2 {
+    padding-top: 1rem;
+  }
+  .left-foot img {
+    margin-left: 2rem;
+  }
+  .left-foot p {
+    margin-left: 5rem;
+  }
+  /* .left-foot p:nth-of-type(5) {
+     padding-top: 1rem; 
+  } */
+}
+@media screen and (max-width: 612px) {
+  .contactspace1, .contactspace2 {
+    width: 100vw;
+    height: 5vh;
+  }
+  .contactspace2 {
+    width: 100vw;
+    height: 0.1vh;
+  }
+  .contactp2 {
+    width: 100%; 
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .register-btn {
+    font-size: 14px; 
+    padding: 8px 16px;
+  }
+  .contact-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+  .right-foot, .left-foot {
+    width: 100vw;
+    height: auto;
+  }
+  .right-foot h2 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .right-foot p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    word-spacing: 0.3em;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .left-foot h2 {
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .left-foot img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+  .left-foot p {
+    margin-left: 4rem;
+    font-size: 1rem;
+  }
+  .left-foot a {
+    font-size: 1rem;
+  }
+}
+/*FOOTER ENDS*/
